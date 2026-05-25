@@ -178,13 +178,20 @@ function generateHeader() {
         </div>
       </div>
       <div class="mobile-header">
-        <div class="mobile-logo">
-          <a href="/">
-            <img src="${img("Southeast-Dental-Logo-Redesign-White-300x107-1.png")}" alt="${siteName}" style="max-height:45px;width:auto;">
+        <div class="mobile-header-top">
+          <a class="mobile-logo" href="/" aria-label="${siteName} home">
+            <img src="${img("Southeast-Dental-Logo-Redesign-White-300x107-1.png")}" alt="${siteName}">
           </a>
+          <button class="mobile-menu-btn" onclick="document.getElementById('mobileMenu').classList.add('active')" aria-label="Open menu">${svgIcon("hamburger")}</button>
         </div>
-        <div class="mobile-controls">
-          <button onclick="document.getElementById('mobileMenu').classList.add('active')" aria-label="Menu">${svgIcon("hamburger")}</button>
+        <div class="mobile-header-info">
+          <div class="mobile-name">${siteName}</div>
+          <a class="mobile-address" href="${mapsUrl}" target="_blank" rel="noopener">${streetAddress}, ${cityState}</a>
+          <a class="mobile-phone" href="tel:${phoneTel}">${phone}</a>
+        </div>
+        <div class="mobile-header-ctas">
+          <a class="btn btn-sm btn-navy-outline" href="${patientPortalUrl}">Patient Portal</a>
+          <a class="btn btn-sm btn-navy" href="${scheduleUrl}">Schedule Online</a>
         </div>
       </div>
     </div>

@@ -289,6 +289,89 @@ a { transition: color var(--dur-fast) var(--ease-out); }
   color: var(--c-surface);
 }
 
+/* ==================== MOBILE HEADER — surface key info on top ==================== */
+
+@media (max-width: 768px) {
+  /* Override original .mobile-header (single row logo+hamburger) into a stacked layout */
+  .mobile-header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100%;
+    padding: var(--s-2) 0 var(--s-4) !important;
+    gap: var(--s-2);
+  }
+
+  .mobile-header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-4);
+  }
+  .mobile-header-top .mobile-logo img {
+    max-height: 48px !important;
+    width: auto !important;
+    display: block;
+  }
+  .mobile-header-top .mobile-menu-btn {
+    background: transparent;
+    border: 1px solid var(--c-hairline);
+    border-radius: var(--r-sm);
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-ink);
+    padding: 0;
+  }
+
+  .mobile-header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: var(--s-2) 0;
+    border-top: 1px solid var(--c-hairline);
+    border-bottom: 1px solid var(--c-hairline);
+    text-align: left;
+  }
+  .mobile-name {
+    font-family: var(--font-heading, 'Montserrat', sans-serif);
+    color: var(--c-ink);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+  }
+  .mobile-address,
+  .mobile-phone {
+    color: var(--c-body);
+    font-size: 13px;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+  .mobile-phone {
+    font-weight: 600;
+    color: var(--c-ink);
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  .mobile-address:hover,
+  .mobile-phone:hover { color: var(--c-accent); }
+
+  .mobile-header-ctas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-2);
+  }
+  .mobile-header-ctas .btn {
+    padding: 10px 12px !important;
+    font-size: 13px !important;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
 /* ==================== FOOTER CTA — overlay, hierarchy, rhythm ==================== */
 
 .footer-cta {
