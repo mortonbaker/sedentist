@@ -1063,6 +1063,47 @@ function copyAssets() {
   console.log("Copied _headers and _redirects");
 }
 
+// Build a set of webp basenames (without extension) so we only wrap <img> tags
+// whose webp sibling actually exists on disk. Computed once at startup.
+const webpAvailable = (() => {
+  const set = new Set();
+  try {
+    for (const f of readdirSync(join(rootDir, "assets", "images"))) {
+      if (f.toLowerCase().endsWith(".webp")) {
+        set.add(f.slice(0, -5).toLowerCase()); // strip ".webp"
+      }
+    }
+  } catch { /* dir may not exist on first build */ }
+  return set;
+})();
+
+// Post-process generated HTML:
+//   1. Wrap every <img src="/assets/images/X.(jpg|jpeg|png)"> in a <picture>
+//      element with a WebP <source>, when the .webp sibling exists.
+//   2. Add loading="lazy" + decoding="async" to every <img> that lacks them,
+//      EXCEPT images already marked fetchpriority="high" (treated as LCP).
+function optimizeImagesInHtml(html) {
+  // Wrap with <picture> + webp source
+  html = html.replace(
+    /<img\b([^>]*?)\s+src="(\/assets\/images\/([^"]+)\.(jpe?g|png))"([^>]*)>/gi,
+    (full, pre, src, base, ext, post) => {
+      const key = base.toLowerCase();
+      if (!webpAvailable.has(key)) return full; // no webp sibling, leave alone
+      const webpSrc = `/assets/images/${base}.webp`;
+      return `<picture><source srcset="${webpSrc}" type="image/webp"><img${pre} src="${src}"${post}></picture>`;
+    }
+  );
+  // Add loading="lazy" + decoding="async" where missing (skip LCP-hint imgs)
+  html = html.replace(/<img\b([^>]*)>/gi, (full, attrs) => {
+    if (/fetchpriority\s*=\s*"high"/i.test(attrs)) return full;
+    let updated = attrs;
+    if (!/\bloading\s*=/i.test(updated)) updated += ' loading="lazy"';
+    if (!/\bdecoding\s*=/i.test(updated)) updated += ' decoding="async"';
+    return `<img${updated}>`;
+  });
+  return html;
+}
+
 function generateSitemap() {
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
   for (const route of routes) {
@@ -1087,7 +1128,7 @@ let pageCount = 0;
 for (const route of routes) {
   const outputPath = join(pagesDir, route.path === "/" ? "" : route.path.replace(/^\//, ""));
   try {
-    const html = generatePage(route);
+    const html = optimizeImagesInHtml(generatePage(route));
     mkdirSync(outputPath, { recursive: true });
     writeFileSync(join(outputPath, "index.html"), html);
     console.log(`  ${route.path}`);

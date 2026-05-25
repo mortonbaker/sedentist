@@ -11,5 +11,7 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "dependencies": {}
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
 }
