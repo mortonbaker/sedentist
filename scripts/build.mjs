@@ -157,7 +157,7 @@ function generateHeader() {
             ${svgIcon("hamburger")}
           </button>
           <div class="header-contact-info">
-            <a href="${mapsUrl}">${streetAddress} ${cityState}</a>
+            <a href="${mapsUrl}" target="_blank" rel="noopener">${streetAddress}, ${cityState}</a>
             <a href="tel:${phoneTel}">${phone}</a>
           </div>
         </div>
