@@ -289,18 +289,81 @@ a { transition: color var(--dur-fast) var(--ease-out); }
   color: var(--c-surface);
 }
 
-/* ==================== FOOTER CTA — keep his bg image, fix button hierarchy ==================== */
+/* ==================== FOOTER CTA — overlay, hierarchy, rhythm ==================== */
 
-.footer-cta-buttons { display: flex; gap: var(--s-4); justify-content: center; flex-wrap: wrap; }
-/* primary stays solid white; the second becomes a transparent ghost */
+.footer-cta {
+  position: relative !important;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: clamp(80px, 11vw, 160px) 0 !important;
+  text-align: center;
+  overflow: hidden;
+}
+/* Strong navy gradient overlay so text and buttons aren't fighting the photo */
+.footer-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(17,33,83,.80) 0%, rgba(17,33,83,.92) 100%);
+  z-index: 0;
+}
+.footer-cta > .container,
+.footer-cta > * {
+  position: relative;
+  z-index: 1;
+}
+.footer-cta .container {
+  max-width: 720px !important;
+  margin: 0 auto;
+  padding: 0 var(--s-6);
+}
+
+.footer-cta h2 {
+  color: var(--c-surface) !important;
+  font-size: clamp(32px, 4.5vw, 52px) !important;
+  font-weight: 600 !important;
+  line-height: 1.15 !important; /* overrides original line-height: 55px */
+  letter-spacing: -0.01em;
+  max-width: 18ch;
+  margin: 0 auto var(--s-10) !important;
+}
+
+.footer-cta-buttons {
+  display: flex !important;
+  gap: var(--s-4) !important;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-cta-buttons .btn {
+  min-width: 200px;
+  padding: 14px 32px !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+}
+
+/* First button stays solid white (primary, high contrast on navy overlay) */
+.footer-cta-buttons .btn:first-child {
+  background-color: var(--c-surface) !important;
+  color: var(--c-ink) !important;
+  border: 1.5px solid var(--c-surface) !important;
+}
+.footer-cta-buttons .btn:first-child:hover {
+  background-color: transparent !important;
+  color: var(--c-surface) !important;
+}
+
+/* Second button becomes the ghost outline so there's a clear primary */
 .footer-cta-buttons .btn + .btn {
   background-color: transparent !important;
   color: var(--c-surface) !important;
-  border-color: var(--c-surface) !important;
+  border: 1.5px solid rgba(255,255,255,.55) !important;
 }
 .footer-cta-buttons .btn + .btn:hover {
   background-color: var(--c-surface) !important;
   color: var(--c-ink) !important;
+  border-color: var(--c-surface) !important;
 }
 
 /* ==================== FOOTER MAP + CONTACT CARD ==================== */
