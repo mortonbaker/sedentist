@@ -64,6 +64,8 @@ function extractCleanContent(html) {
     .replace(/<style[\s\S]*?<\/style>/gi, "")
     .replace(/<link[^>]*>/gi, "")
     .replace(/https?:\/\/sedentist\.com\/wp-content\/uploads\//gi, "/assets/images/wp-content_uploads_")
+    .replace(/\/assets\/images\/wp-content_uploads_([^\s"')]+)/gi,
+             (_, tail) => "/assets/images/wp-content_uploads_" + tail.replace(/\//g, "_"))
     .replace(/srcset="[^"]*"/gi, "")
     .replace(/sizes="[^"]*"/gi, "")
     .replace(/width="\d*"\s*/gi, "")
