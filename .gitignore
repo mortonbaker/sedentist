@@ -1,0 +1,9 @@
+node_modules/
+pages/
+RUBE_WRANGLER_API_TOKEN.txt
+pages-deploy.zip
+*.env
+*.env.*
+*.token
+*.key
+*.secret

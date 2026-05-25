@@ -1,0 +1,38 @@
+# Cloudflare Pages Headers
+# Security and caching headers for sedentist.com static site
+
+# Cache static assets aggressively
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/media/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML pages - no cache (always fresh)
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Root pages
+/
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Security headers for all responses
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Content Security Policy
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com https://maps.googleapis.com https://www.youtube.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://maps.gstatic.com https://maps.googleapis.com; frame-src https://www.youtube.com https://maps.google.com; connect-src 'self' https://maps.googleapis.com https://maps.gstatic.com

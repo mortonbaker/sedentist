@@ -1,0 +1,159 @@
+﻿================================================================================
+                        SEDENTIST.COM CRAWL REPORT
+================================================================================
+Generated: 2026-05-21 08:58:00
+Method: Sitemap Analysis (Full Crawl Blocked by Cloudflare)
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Total Pages Discovered: 60
+Total Internal Links:   UNKNOWN (crawl blocked)
+Total External Links:   UNKNOWN (crawl blocked)
+Total Anchor Tags:       UNKNOWN (crawl blocked)
+Total Nav Elements:      UNKNOWN (crawl blocked)
+
+CRITICAL ISSUE: Site is protected by Cloudflare bot protection which returns
+403 Forbidden for all automated HTTP requests. Only XML sitemaps accessible.
+
+SITE INFORMATION
+--------------------------------------------------------------------------------
+Base URL:        https://sedentist.com/
+Server:          Cloudflare-protected (based on 403 responses)
+CMS:             WordPress (Yoast SEO detected)
+Sitemap Index:   https://sedentist.com/sitemap_index.xml
+Robots.txt:      https://sedentist.com/robots.txt
+
+DISCOVERED PAGES BY SITEMAP
+--------------------------------------------------------------------------------
+
+PAGE SITEMAP (27 pages):
+  https://sedentist.com/                              [2026-04-29]
+  https://sedentist.com/sample-page/                  [2022-01-15]
+  https://sedentist.com/contact/                      [2022-01-24]
+  https://sedentist.com/about/                        [2022-01-24]
+  https://sedentist.com/testimonial/                  [2022-01-24]
+  https://sedentist.com/gallery/                      [2022-01-25]
+  https://sedentist.com/services/                     [2024-03-08]
+  https://sedentist.com/services/family-dentistry/     [2022-01-28]
+  https://sedentist.com/services/general-dentistry/   [2022-01-28]
+  https://sedentist.com/services/crown/               [2022-01-28]
+  https://sedentist.com/services/denture-or-partial/   [2022-01-28]
+  https://sedentist.com/services/extractions/         [2022-01-28]
+  https://sedentist.com/services/implants/            [2022-01-28]
+  https://sedentist.com/services/memory-free-dentistry/ [2022-01-28]
+  https://sedentist.com/services/wisdom-teeth-removal/ [2022-01-28]
+  https://sedentist.com/services/teeth-whitening/     [2022-01-28]
+  https://sedentist.com/services/root-canals/         [2022-01-28]
+  https://sedentist.com/services/fillings/            [2022-01-28]
+  https://sedentist.com/services/dental-cleaning-exams/ [2022-01-28]
+  https://sedentist.com/services/dental-bonding/       [2022-01-28]
+  https://sedentist.com/oral-infection-control/        [2022-01-31]
+  https://sedentist.com/patient-info/                  [2024-04-10]
+
+POST SITEMAP (20 posts):
+  https://sedentist.com/blog/                                        [2022-01-30]
+  https://sedentist.com/can-a-dry-mouth-cause-cavities/             [2022-01-30]
+  https://sedentist.com/how-painful-is-the-dental-implant-process/   [2022-01-30]
+  https://sedentist.com/do-oral-piercings-cause-infections/         [2022-01-30]
+  https://sedentist.com/are-dental-implants-noticeable/             [2022-01-30]
+  https://sedentist.com/are-there-any-differences-between-mouth-washes/ [2022-01-30]
+  https://sedentist.com/how-can-i-reduce-my-costs-for-dental-care/   [2022-01-30]
+  https://sedentist.com/what-can-a-cosmetic-dentist-do/             [2022-01-30]
+  https://sedentist.com/what-are-the-pros-and-cons-of-dental-crowns/ [2022-01-30]
+  https://sedentist.com/how-long-do-dental-crowns-last/              [2022-01-30]
+  https://sedentist.com/how-do-i-know-if-i-have-a-cavity/           [2022-01-30]
+  https://sedentist.com/how-can-poor-oral-health-affect-the-rest-of-the-body/ [2022-01-30]
+  https://sedentist.com/is-it-better-to-get-a-dental-implant-or-a-bridge/ [2022-01-30]
+  https://sedentist.com/when-should-a-person-switch-dentists/        [2022-01-30]
+  https://sedentist.com/how-often-do-dental-implants-need-to-be-replaced/ [2022-01-30]
+  https://sedentist.com/can-dental-cleanings-damage-enamel/          [2022-01-30]
+  https://sedentist.com/how-do-i-help-with-tooth-pain/               [2022-01-30]
+  https://sedentist.com/is-dental-bonding-permanent/                 [2022-01-30]
+  https://sedentist.com/is-it-worth-buying-an-electric-tooth-brush/  [2022-01-30]
+  https://sedentist.com/why-am-i-vomiting-after-a-wisdom-teeth-removal/ [2022-01-30]
+
+CATEGORY SITEMAP (3 categories):
+  https://sedentist.com/category/cosmetic-dentistry/   [2022-01-30]
+  https://sedentist.com/category/family-dentistry/      [2022-01-30]
+  https://sedentist.com/category/uncategorized/         [2022-01-30]
+
+TAG SITEMAP (9 tags):
+  https://sedentist.com/tag/brushing-faq/               [2022-01-30]
+  https://sedentist.com/tag/cavities/                   [2022-01-30]
+  https://sedentist.com/tag/cavity-cause/               [2022-01-30]
+  https://sedentist.com/tag/dental-cleaning/            [2022-01-30]
+  https://sedentist.com/tag/dry-mouth/                  [2022-01-30]
+  https://sedentist.com/tag/electric-tooth-brush/        [2022-01-30]
+  https://sedentist.com/tag/symptoms/                   [2022-01-30]
+  https://sedentist.com/tag/vomiting/                   [2022-01-30]
+  https://sedentist.com/tag/wisdom-teeth-removal/       [2022-01-30]
+
+AUTHOR SITEMAP (1 author):
+  https://sedentist.com/author/rothrube/                [2022-02-03]
+
+SITE HIERARCHY (Inferred)
+--------------------------------------------------------------------------------
+Root/
+├── Home (https://sedentist.com/)
+├── About (https://sedentist.com/about/)
+├── Contact (https://sedentist.com/contact/)
+├── Gallery (https://sedentist.com/gallery/)
+├── Testimonial (https://sedentist.com/testimonial/)
+├── Services (https://sedentist.com/services/)
+│   ├── Family Dentistry
+│   ├── General Dentistry
+│   ├── Crown
+│   ├── Denture or Partial
+│   ├── Extractions
+│   ├── Implants
+│   ├── Memory-Free Dentistry
+│   ├── Wisdom Teeth Removal
+│   ├── Teeth Whitening
+│   ├── Root Canals
+│   ├── Fillings
+│   ├── Dental Cleaning Exams
+│   └── Dental Bonding
+├── Blog (https://sedentist.com/blog/)
+│   └── (20 blog posts)
+├── Patient Info (https://sedentist.com/patient-info/)
+├── Oral Infection Control (https://sedentist.com/oral-infection-control/)
+├── Categories/
+│   ├── Cosmetic Dentistry
+│   ├── Family Dentistry
+│   └── Uncategorized
+├── Tags/ (9 tags)
+└── Author/ (rothrube)
+
+ISSUES DETECTED
+--------------------------------------------------------------------------------
+[CRITICAL] Bot Protection Blocking Crawl
+  - Cloudflare protection detected on all page requests
+  - Status code 403 Forbidden returned for direct page access
+  - Only XML sitemaps were accessible
+  - Impact: Cannot perform full link analysis, anchor extraction, or navigation audit
+
+[MEDIUM] Incomplete Link Data
+  - XML sitemaps do not contain link relationship information
+  - Cannot determine which pages link to others without crawling
+  - Impact: Link ledger is incomplete
+
+[LOW] No External Link Information
+  - External links not documented due to crawl blocking
+  - Impact: Cannot audit outbound links
+
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+1. For complete link analysis, use browser automation (Selenium/Puppeteer)
+   with stealth mode to bypass Cloudflare
+2. Manually browse the site to document navigation structure
+3. Check Google Search Console if you have access
+4. Consider a proxy-based crawling approach to distribute requests
+
+TECHNICAL NOTES
+--------------------------------------------------------------------------------
+- WordPress site with Yoast SEO plugin
+- Sitemaps generated by Yoast SEO v17.x (based on stylesheet reference)
+- Site content appears to be dental/medical related ("Sedentist" - likely
+  "Southeast Dental" based on URL patterns)
+- Services focus: Family dentistry, implants, sedation dentistry, wisdom teeth

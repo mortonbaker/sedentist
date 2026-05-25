@@ -1,0 +1,449 @@
+{
+  "generated": "2026-05-21T18:12:52.874Z",
+  "baseUrl": "https://sedentist.com",
+  "totalUrls": 55,
+  "successCount": 55,
+  "failCount": 0,
+  "pages": [
+    {
+      "url": "https://sedentist.com/",
+      "slug": "home",
+      "title": "Robot Challenge Screen",
+      "success": true,
+      "error": null,
+      "filePath": "index.html"
+    },
+    {
+      "url": "https://sedentist.com/sample-page/",
+      "slug": "sample-page",
+      "title": "Sample Page - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "sample-page.html"
+    },
+    {
+      "url": "https://sedentist.com/contact/",
+      "slug": "contact",
+      "title": "Contact - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "contact.html"
+    },
+    {
+      "url": "https://sedentist.com/about/",
+      "slug": "about",
+      "title": "About Us - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "about.html"
+    },
+    {
+      "url": "https://sedentist.com/testimonial/",
+      "slug": "testimonial",
+      "title": "Testimonials - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "testimonial.html"
+    },
+    {
+      "url": "https://sedentist.com/gallery/",
+      "slug": "gallery",
+      "title": "Gallery - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "gallery.html"
+    },
+    {
+      "url": "https://sedentist.com/services/",
+      "slug": "services",
+      "title": "Services - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services.html"
+    },
+    {
+      "url": "https://sedentist.com/services/family-dentistry/",
+      "slug": "services-family-dentistry",
+      "title": "Family Dentistry - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_family-dentistry.html"
+    },
+    {
+      "url": "https://sedentist.com/services/general-dentistry/",
+      "slug": "services-general-dentistry",
+      "title": "General Dentistry - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_general-dentistry.html"
+    },
+    {
+      "url": "https://sedentist.com/services/crown/",
+      "slug": "services-crown",
+      "title": "Crowns - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_crown.html"
+    },
+    {
+      "url": "https://sedentist.com/services/denture-or-partial/",
+      "slug": "services-denture-or-partial",
+      "title": "Denture or Partial - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_denture-or-partial.html"
+    },
+    {
+      "url": "https://sedentist.com/services/extractions/",
+      "slug": "services-extractions",
+      "title": "Extractions - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_extractions.html"
+    },
+    {
+      "url": "https://sedentist.com/services/implants/",
+      "slug": "services-implants",
+      "title": "Implants - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_implants.html"
+    },
+    {
+      "url": "https://sedentist.com/services/memory-free-dentistry/",
+      "slug": "services-memory-free-dentistry",
+      "title": "Memory Free Dentistry - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_memory-free-dentistry.html"
+    },
+    {
+      "url": "https://sedentist.com/services/wisdom-teeth-removal/",
+      "slug": "services-wisdom-teeth-removal",
+      "title": "Wisdom Teeth Removal - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_wisdom-teeth-removal.html"
+    },
+    {
+      "url": "https://sedentist.com/services/teeth-whitening/",
+      "slug": "services-teeth-whitening",
+      "title": "Teeth Whitening - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_teeth-whitening.html"
+    },
+    {
+      "url": "https://sedentist.com/services/root-canals/",
+      "slug": "services-root-canals",
+      "title": "Root Canals - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_root-canals.html"
+    },
+    {
+      "url": "https://sedentist.com/services/fillings/",
+      "slug": "services-fillings",
+      "title": "Fillings - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_fillings.html"
+    },
+    {
+      "url": "https://sedentist.com/services/dental-cleaning-exams/",
+      "slug": "services-dental-cleaning-exams",
+      "title": "Dental Cleaning & Exams - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_dental-cleaning-exams.html"
+    },
+    {
+      "url": "https://sedentist.com/services/dental-bonding/",
+      "slug": "services-dental-bonding",
+      "title": "Dental Bonding - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "services_dental-bonding.html"
+    },
+    {
+      "url": "https://sedentist.com/oral-infection-control/",
+      "slug": "oral-infection-control",
+      "title": "Oral Infection Control - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "oral-infection-control.html"
+    },
+    {
+      "url": "https://sedentist.com/patient-info/",
+      "slug": "patient-info",
+      "title": "Patient Forms - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "patient-info.html"
+    },
+    {
+      "url": "https://sedentist.com/blog/",
+      "slug": "blog",
+      "title": "Blog - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "blog.html"
+    },
+    {
+      "url": "https://sedentist.com/can-a-dry-mouth-cause-cavities/",
+      "slug": "can-a-dry-mouth-cause-cavities",
+      "title": "Can a Dry Mouth Cause Cavities? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "can-a-dry-mouth-cause-cavities.html"
+    },
+    {
+      "url": "https://sedentist.com/how-painful-is-the-dental-implant-process/",
+      "slug": "how-painful-is-the-dental-implant-process",
+      "title": "How Painful is the Dental Implant Process? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "how-painful-is-the-dental-implant-process.html"
+    },
+    {
+      "url": "https://sedentist.com/do-oral-piercings-cause-infections/",
+      "slug": "do-oral-piercings-cause-infections",
+      "title": "Do Oral Piercings Cause Infections? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "do-oral-piercings-cause-infections.html"
+    },
+    {
+      "url": "https://sedentist.com/are-dental-implants-noticeable/",
+      "slug": "are-dental-implants-noticeable",
+      "title": "Are Dental Implants Noticeable? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "are-dental-implants-noticeable.html"
+    },
+    {
+      "url": "https://sedentist.com/are-there-any-differences-between-mouth-washes/",
+      "slug": "are-there-any-differences-between-mouth-washes",
+      "title": "Are There any Differences Between Mouth Washes? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "are-there-any-differences-between-mouth-washes.html"
+    },
+    {
+      "url": "https://sedentist.com/how-can-i-reduce-my-costs-for-dental-care/",
+      "slug": "how-can-i-reduce-my-costs-for-dental-care",
+      "title": "How Can I Reduce My Costs for Dental Care? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "how-can-i-reduce-my-costs-for-dental-care.html"
+    },
+    {
+      "url": "https://sedentist.com/what-can-a-cosmetic-dentist-do/",
+      "slug": "what-can-a-cosmetic-dentist-do",
+      "title": "What Can a Cosmetic Dentist Do? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "what-can-a-cosmetic-dentist-do.html"
+    },
+    {
+      "url": "https://sedentist.com/what-are-the-pros-and-cons-of-dental-crowns/",
+      "slug": "what-are-the-pros-and-cons-of-dental-crowns",
+      "title": "What are the Pros and Cons of Dental Crowns? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "what-are-the-pros-and-cons-of-dental-crowns.html"
+    },
+    {
+      "url": "https://sedentist.com/how-long-do-dental-crowns-last/",
+      "slug": "how-long-do-dental-crowns-last",
+      "title": "How Long do Dental Crowns Last? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "how-long-do-dental-crowns-last.html"
+    },
+    {
+      "url": "https://sedentist.com/how-do-i-know-if-i-have-a-cavity/",
+      "slug": "how-do-i-know-if-i-have-a-cavity",
+      "title": "How Do I Know If I Have a Cavity? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "how-do-i-know-if-i-have-a-cavity.html"
+    },
+    {
+      "url": "https://sedentist.com/how-can-poor-oral-health-affect-the-rest-of-the-body/",
+      "slug": "how-can-poor-oral-health-affect-the-rest-of-the-body",
+      "title": "How Can Poor Oral Health Affect the Rest of the Body? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "how-can-poor-oral-health-affect-the-rest-of-the-body.html"
+    },
+    {
+      "url": "https://sedentist.com/is-it-better-to-get-a-dental-implant-or-a-bridge/",
+      "slug": "is-it-better-to-get-a-dental-implant-or-a-bridge",
+      "title": "Is it Better to Get A Dental Implant or a Bridge? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "is-it-better-to-get-a-dental-implant-or-a-bridge.html"
+    },
+    {
+      "url": "https://sedentist.com/when-should-a-person-switch-dentists/",
+      "slug": "when-should-a-person-switch-dentists",
+      "title": "When Should a Person Switch Dentists? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "when-should-a-person-switch-dentists.html"
+    },
+    {
+      "url": "https://sedentist.com/how-often-do-dental-implants-need-to-be-replaced/",
+      "slug": "how-often-do-dental-implants-need-to-be-replaced",
+      "title": "How Often do Dental Implants Need to Be Replaced? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "how-often-do-dental-implants-need-to-be-replaced.html"
+    },
+    {
+      "url": "https://sedentist.com/can-dental-cleanings-damage-enamel/",
+      "slug": "can-dental-cleanings-damage-enamel",
+      "title": "Can Dental Cleanings Damage Enamel? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "can-dental-cleanings-damage-enamel.html"
+    },
+    {
+      "url": "https://sedentist.com/how-do-i-help-with-tooth-pain/",
+      "slug": "how-do-i-help-with-tooth-pain",
+      "title": "How Do I Help with Tooth Pain? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "how-do-i-help-with-tooth-pain.html"
+    },
+    {
+      "url": "https://sedentist.com/is-dental-bonding-permanent/",
+      "slug": "is-dental-bonding-permanent",
+      "title": "Is Dental Bonding Permanent? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "is-dental-bonding-permanent.html"
+    },
+    {
+      "url": "https://sedentist.com/is-it-worth-buying-an-electric-tooth-brush/",
+      "slug": "is-it-worth-buying-an-electric-tooth-brush",
+      "title": "Is it Worth Buying an Electric Tooth Brush? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "is-it-worth-buying-an-electric-tooth-brush.html"
+    },
+    {
+      "url": "https://sedentist.com/why-am-i-vomiting-after-a-wisdom-teeth-removal/",
+      "slug": "why-am-i-vomiting-after-a-wisdom-teeth-removal",
+      "title": "Why am I Vomiting after a Wisdom Teeth Removal? - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "why-am-i-vomiting-after-a-wisdom-teeth-removal.html"
+    },
+    {
+      "url": "https://sedentist.com/category/cosmetic-dentistry/",
+      "slug": "category-cosmetic-dentistry",
+      "title": "Cosmetic Dentistry Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "category_cosmetic-dentistry.html"
+    },
+    {
+      "url": "https://sedentist.com/category/family-dentistry/",
+      "slug": "category-family-dentistry",
+      "title": "Family Dentistry Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "category_family-dentistry.html"
+    },
+    {
+      "url": "https://sedentist.com/category/uncategorized/",
+      "slug": "category-uncategorized",
+      "title": "Uncategorized Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "category_uncategorized.html"
+    },
+    {
+      "url": "https://sedentist.com/tag/brushing-faq/",
+      "slug": "tag-brushing-faq",
+      "title": "brushing faq Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "tag_brushing-faq.html"
+    },
+    {
+      "url": "https://sedentist.com/tag/cavities/",
+      "slug": "tag-cavities",
+      "title": "cavities Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "tag_cavities.html"
+    },
+    {
+      "url": "https://sedentist.com/tag/cavity-cause/",
+      "slug": "tag-cavity-cause",
+      "title": "cavity cause Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "tag_cavity-cause.html"
+    },
+    {
+      "url": "https://sedentist.com/tag/dental-cleaning/",
+      "slug": "tag-dental-cleaning",
+      "title": "dental cleaning Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "tag_dental-cleaning.html"
+    },
+    {
+      "url": "https://sedentist.com/tag/dry-mouth/",
+      "slug": "tag-dry-mouth",
+      "title": "dry mouth Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "tag_dry-mouth.html"
+    },
+    {
+      "url": "https://sedentist.com/tag/electric-tooth-brush/",
+      "slug": "tag-electric-tooth-brush",
+      "title": "electric tooth brush Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "tag_electric-tooth-brush.html"
+    },
+    {
+      "url": "https://sedentist.com/tag/symptoms/",
+      "slug": "tag-symptoms",
+      "title": "symptoms Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "tag_symptoms.html"
+    },
+    {
+      "url": "https://sedentist.com/tag/vomiting/",
+      "slug": "tag-vomiting",
+      "title": "vomiting Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "tag_vomiting.html"
+    },
+    {
+      "url": "https://sedentist.com/tag/wisdom-teeth-removal/",
+      "slug": "tag-wisdom-teeth-removal",
+      "title": "wisdom teeth removal Archives - Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "tag_wisdom-teeth-removal.html"
+    },
+    {
+      "url": "https://sedentist.com/author/rothrube/",
+      "slug": "author-rothrube",
+      "title": "Rothrube, Author at Southeast Dental",
+      "success": true,
+      "error": null,
+      "filePath": "author_rothrube.html"
+    }
+  ]
+}

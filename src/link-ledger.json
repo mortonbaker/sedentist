@@ -1,0 +1,82 @@
+﻿{
+  "generated": "2026-05-21T08:58:00",
+  "method": "sitemap_analysis_with_bot_protection_limitation",
+  "baseUrl": "https://sedentist.com",
+  "note": "Site has Cloudflare bot protection that blocks direct crawling. Full link analysis unavailable.",
+  "summary": {
+    "totalPages": 60,
+    "totalInternalLinks": "unknown",
+    "totalExternalLinks": "unknown",
+    "totalAnchors": "unknown",
+    "totalNavElements": "unknown",
+    "crawlStatus": "blocked_by_cloudflare"
+  },
+  "site_structure": {
+    "homepage": "https://sedentist.com/",
+    "main_sections": [
+      { "name": "about", "url": "https://sedentist.com/about/" },
+      { "name": "contact", "url": "https://sedentist.com/contact/" },
+      { "name": "gallery", "url": "https://sedentist.com/gallery/" },
+      { "name": "testimonial", "url": "https://sedentist.com/testimonial/" },
+      { "name": "services", "url": "https://sedentist.com/services/", "children": 13 },
+      { "name": "blog", "url": "https://sedentist.com/blog/", "children": 19 },
+      { "name": "patient-info", "url": "https://sedentist.com/patient-info/" },
+      { "name": "oral-infection-control", "url": "https://sedentist.com/oral-infection-control/" }
+    ],
+    "services_offered": [
+      "family-dentistry",
+      "general-dentistry",
+      "crown",
+      "denture-or-partial",
+      "extractions",
+      "implants",
+      "memory-free-dentistry",
+      "wisdom-teeth-removal",
+      "teeth-whitening",
+      "root-canals",
+      "fillings",
+      "dental-cleaning-exams",
+      "dental-bonding"
+    ]
+  },
+  "known_internal_links": [],
+  "known_external_links": [],
+  "navigation_structure": {
+    "primary_nav": [
+      { "text": "Home", "href": "/" },
+      { "text": "About Us", "href": "/about/" },
+      { "text": "Services", "href": "/services/" },
+      { "text": "New Patients", "href": "/patient-info/" },
+      { "text": "Blog", "href": "/blog/" },
+      { "text": "Contact", "href": "/contact/" }
+    ]
+  },
+  "issues": [
+    {
+      "type": "bot_protection",
+      "severity": "high",
+      "description": "Site uses Cloudflare bot protection that blocks automated crawling. Direct page access returns 403 Forbidden.",
+      "impact": "Full link analysis, anchor detection, and navigation element extraction not possible via automated crawl."
+    },
+    {
+      "type": "incomplete_data",
+      "severity": "medium",
+      "description": "Data collected from Yoast SEO XML sitemaps only. Sitemaps do not contain link relationship information.",
+      "impact": "Cannot determine which pages link to which other pages without crawling."
+    }
+  ],
+  "sitemaps_analyzed": [
+    "https://sedentist.com/sitemap_index.xml",
+    "https://sedentist.com/post-sitemap.xml (20 posts)",
+    "https://sedentist.com/page-sitemap.xml (27 pages)",
+    "https://sedentist.com/category-sitemap.xml (3 categories)",
+    "https://sedentist.com/post_tag-sitemap.xml (9 tags)",
+    "https://sedentist.com/author-sitemap.xml (1 author)"
+  ],
+  "recommended_next_steps": [
+    "Use a browser automation tool like Selenium or Puppeteer with stealth mode to bypass Cloudflare",
+    "Manually review the site in a browser to document navigation structure",
+    "Check Google Search Console for existing link data if you have access",
+    "Consider using a proxy service to distribute requests and avoid rate limiting"
+  ]
+}

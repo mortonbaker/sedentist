@@ -1,0 +1,60 @@
+# Cloudflare Pages Redirects
+# Static site migration from sedentist.com
+
+# Redirect all old WordPress URLs to clean URLs
+/services/family-dentistry/    /services/family-dentistry
+/services/general-dentistry/  /services/general-dentistry
+/services/crown/              /services/crown
+/services/denture-or-partial/  /services/denture-or-partial
+/services/extractions/         /services/extractions
+/services/implants/            /services/implants
+/services/memory-free-dentistry/ /services/memory-free-dentistry
+/services/wisdom-teeth-removal/ /services/wisdom-teeth-removal
+/services/teeth-whitening/     /services/teeth-whitening
+/services/root-canals/         /services/root-canals
+/services/fillings/            /services/fillings
+/services/dental-cleaning-exams/ /services/dental-cleaning-exams
+/services/dental-bonding/      /services/dental-bonding
+
+# Blog posts - remove trailing slashes
+/can-a-dry-mouth-cause-cavities/   /can-a-dry-mouth-cause-cavities
+/how-painful-is-the-dental-implant-process/ /how-painful-is-the-dental-implant-process
+/do-oral-piercings-cause-infections/ /do-oral-piercings-cause-infections
+/are-dental-implants-noticeable/  /are-dental-implants-noticeable
+/are-there-any-differences-between-mouth-washes/ /are-there-any-differences-between-mouth-washes
+/how-can-i-reduce-my-costs-for-dental-care/ /how-can-i-reduce-my-costs-for-dental-care
+/what-can-a-cosmetic-dentist-do/  /what-can-a-cosmetic-dentist-do
+/what-are-the-pros-and-cons-of-dental-crowns/ /what-are-the-pros-and-cons-of-dental-crowns
+/how-long-do-dental-crowns-last/ /how-long-do-dental-crowns-last
+/how-do-i-know-if-i-have-a-cavity/ /how-do-i-know-if-i-have-a-cavity
+/how-can-poor-oral-health-affect-the-rest-of-the-body/ /how-can-poor-oral-health-affect-the-rest-of-the-body
+/is-it-better-to-get-a-dental-implant-or-a-bridge/ /is-it-better-to-get-a-dental-implant-or-a-bridge
+/when-should-a-person-switch-dentists/ /when-should-a-person-switch-dentists
+/how-often-do-dental-implants-need-to-be-replaced/ /how-often-do-dental-implants-need-to-be-replaced
+/can-dental-cleanings-damage-enamel/ /can-dental-cleanings-damage-enamel
+/how-do-i-help-with-tooth-pain/    /how-do-i-help-with-tooth-pain
+/is-dental-bonding-permanent/     /is-dental-bonding-permanent
+/is-it-worth-buying-an-electric-tooth-brush/ /is-it-worth-buying-an-electric-tooth-brush
+/why-am-i-vomiting-after-a-wisdom-teeth-removal/ /why-am-i-vomiting-after-a-wisdom-teeth-removal
+
+# Pagination (no real pages for these)
+/blog/page/*/                     /blog
+/category/*/page/*/               /blog
+/author/*/page/*/                 /about
+
+# Pagination
+/blog/page/*/                     /blog
+/category/*/page/*/               /blog
+/author/*/page/*/                 /about
+
+# Feed URLs - block these
+/feed/                            /404
+/comments/feed/                   /404
+/wp-json/                         /404
+
+# WordPress specific - block access
+/wp-admin/                        /404
+/wp-login.php                     /404
+/wp-content/                      /404
+/wp-includes/                     /404
+/xmlrpc.php                       /404
