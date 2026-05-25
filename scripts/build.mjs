@@ -276,22 +276,26 @@ function generateFooter() {
 function generateHomepage() {
   return `
   <section class="hero-slider">
+    <div class="hero-video-bg">
+      <iframe src="https://www.youtube.com/embed/-19HlNPc6m8?autoplay=1&mute=1&loop=1&playlist=-19HlNPc6m8&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" title="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="hero-overlay"></div>
     <div class="hero-slides" id="heroSlider">
-      <div class="hero-slide active" style="background:rgba(255,255,255,0.9);">
+      <div class="hero-slide active">
         <div class="hero-slide-content">
           <h2>Discover a new dental experience</h2>
           <p>At southeast dental</p>
           <a href="${scheduleUrl}" class="btn btn-lg btn-navy">Schedule Online</a>
         </div>
       </div>
-      <div class="hero-slide" style="background:rgba(255,255,255,0.9);">
+      <div class="hero-slide">
         <div class="hero-slide-content">
           <h2>No insurance? No problem</h2>
           <p>Click for more information for our in house discount plan</p>
           <a href="/contact/" class="btn btn-lg btn-navy">Learn more</a>
         </div>
       </div>
-      <div class="hero-slide" style="background:rgba(255,255,255,0.9);">
+      <div class="hero-slide">
         <div class="hero-slide-content">
           <h2>Dental implants for $2499</h2>
           <p>This offer includes implant body, abutment, crown. Does not include cost of grafting or complex cases.</p>
@@ -329,7 +333,8 @@ function generateHomepage() {
           <a href="/about/" class="btn btn-md btn-gray-outline">Learn More</a>
         </div>
         <div class="col img-col">
-          <img src="${img("southeastdental03.jpeg")}" alt="Southeast Dental office" style="border-radius:25px;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+          <img src="${img("southeastdental03.jpeg")}" alt="Southeast Dental office" style="border-radius:25px;box-shadow:0 4px 20px rgba(0,0,0,0.1);margin-bottom:15px;">
+          <iframe src="https://www.youtube.com/embed/JpAfeTmwMqM?rel=0" title="Southeast Dental Savings Discount Plan" style="width:100%;aspect-ratio:16/9;border:none;border-radius:25px;" loading="lazy" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -931,16 +936,21 @@ function testSlide(dir) {
 setInterval(function(){ testSlide(1); }, 7000);
 
 function openVideo(id) {
-  document.getElementById('videoFrame').src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
-  document.getElementById('videoLightbox').classList.add('active');
+  var f = document.getElementById('videoFrame');
+  var lb = document.getElementById('videoLightbox');
+  if (!f || !lb) return;
+  f.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+  lb.classList.add('active');
 }
 function closeVideo() {
-  document.getElementById('videoFrame').src = '';
-  document.getElementById('videoLightbox').classList.remove('active');
+  var f = document.getElementById('videoFrame');
+  var lb = document.getElementById('videoLightbox');
+  if (!f || !lb) return;
+  f.src = '';
+  lb.classList.remove('active');
 }
-document.getElementById('videoLightbox').addEventListener('click', function(e) {
-  if (e.target === this) closeVideo();
-});
+var lb = document.getElementById('videoLightbox');
+if (lb) lb.addEventListener('click', function(e) { if (e.target === this) closeVideo(); });
 </script>`;
 
 function generatePage(route) {
