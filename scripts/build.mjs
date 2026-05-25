@@ -279,13 +279,13 @@ function generateHomepage() {
   return `
   <section class="hero-slider">
     <div class="hero-video-bg">
-      <iframe src="https://www.youtube.com/embed/-19HlNPc6m8?autoplay=1&mute=1&loop=1&playlist=-19HlNPc6m8&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" title="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/-19HlNPc6m8?autoplay=1&mute=1&loop=1&playlist=-19HlNPc6m8&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" title="Southeast Dental practice ambient background video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-slides" id="heroSlider">
       <div class="hero-slide active">
         <div class="hero-slide-content">
-          <h2>Discover a new dental experience</h2>
+          <h1>Discover a new dental experience</h1>
           <p>At southeast dental</p>
           <a href="${scheduleUrl}" class="btn btn-lg btn-navy">Schedule Online</a>
         </div>
@@ -407,9 +407,10 @@ function generateHomepage() {
 
 function generateAboutPage() {
   return `
-  <section class="page-hero-banner" style="background-image:url('${img("southeastdental07.jpeg")}')">
+  <section class="page-hero-banner">
     <div class="page-hero-content">
-      <h1 style="color:#fff;font-size:0;">About Southeast Dental</h1>
+      <h1>About Southeast Dental</h1>
+      <p>Family, cosmetic, and sedation dentistry in Dothan, Alabama.</p>
     </div>
   </section>
 
