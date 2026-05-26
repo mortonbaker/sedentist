@@ -1,6 +1,7 @@
 import { writeFileSync, mkdirSync, existsSync, readFileSync, cpSync, rmSync, readdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import sharp from "sharp";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(__dirname, "..");
@@ -228,7 +229,7 @@ function generateFooter() {
         <h2>Want to schedule an appointment?</h2>
         <div class="footer-cta-buttons">
           <a href="${scheduleUrl}" class="btn btn-lg btn-white-solid">Schedule Online</a>
-          <a href="/about/" class="btn btn-lg btn-white-solid">Learn More</a>
+          <a href="/about/" class="btn btn-lg btn-white-solid" aria-label="Learn more about Southeast Dental">Learn More</a>
         </div>
       </div>
     </section>
@@ -294,19 +295,19 @@ function generateHomepage() {
         <div class="hero-slide-content">
           <h2>No insurance? No problem</h2>
           <p>Click for more information for our in house discount plan</p>
-          <a href="/contact/" class="btn btn-lg btn-navy">Learn more</a>
+          <a href="/contact/" class="btn btn-lg btn-navy" aria-label="Learn more about the in-house discount plan">Learn more</a>
         </div>
       </div>
       <div class="hero-slide">
         <div class="hero-slide-content">
           <h2>Dental implants for $2499</h2>
           <p>This offer includes implant body, abutment, crown. Does not include cost of grafting or complex cases.</p>
-          <a href="/contact/" class="btn btn-lg btn-navy">Learn more</a>
+          <a href="/contact/" class="btn btn-lg btn-navy" aria-label="Learn more about the $2499 dental implant offer">Learn more</a>
         </div>
       </div>
     </div>
-    <button class="hero-slider-arrow prev" onclick="heroSlide(-1)">${svgIcon("arrowLeft")}</button>
-    <button class="hero-slider-arrow next" onclick="heroSlide(1)">${svgIcon("arrowRight")}</button>
+    <button class="hero-slider-arrow prev" onclick="heroSlide(-1)" aria-label="Previous slide">${svgIcon("arrowLeft")}</button>
+    <button class="hero-slider-arrow next" onclick="heroSlide(1)" aria-label="Next slide">${svgIcon("arrowRight")}</button>
   </section>
 
   <section class="section-about">
@@ -318,7 +319,9 @@ function generateHomepage() {
         <div class="col text-col">
           <h2>About Our Practice</h2>
           <p>Dr. Lewis started Southeast Dental with two basic philosophies: <strong>evidence-based</strong> dentistry and <strong>patient education.</strong> We believe in doing what is best for our patient's oral health. We strive to educate our patients on the importance of their oral health so they can make the best-informed decisions about their health.</p>
-          <a href="/about/" class="btn btn-md btn-gray-outline">Learn More</a>
+        </div>
+        <div class="col">
+          <a href="/about/" class="btn btn-md btn-gray-outline" aria-label="Learn more about our practice">Learn More</a>
         </div>
       </div>
     </div>
@@ -331,8 +334,8 @@ function generateHomepage() {
           <h2>Why Choose Us?</h2>
           <p>While a large part of what we do at Southeast Dental is aesthetic and very complex treatment driven, the core of what we do is general family care.</p>
           <p>We encourage you to involve yourself in your own treatment and ask questions throughout our relationship. We offer comprehensive services from routine checkups and emergency care to cosmetic makeovers. Call <a href="tel:${phoneTel}"><strong>${phone}</strong></a> for a free consultation.</p>
-          <p style="font-size:14px;color:var(--text-gray);">Serving: Abbeville, Ashford, Dothan, Enterprise, Headland, Ozark, Panama City, Marianna, and more.</p>
-          <a href="/about/" class="btn btn-md btn-gray-outline">Learn More</a>
+          <p style="font-size:14px;color:var(--text-muted);">Serving: Abbeville, Ashford, Dothan, Enterprise, Headland, Ozark, Panama City, Marianna, and more.</p>
+          <a href="/about/" class="btn btn-md btn-gray-outline" aria-label="Learn more about our practice">Learn More</a>
         </div>
         <div class="col img-col">
           <img src="${img("southeastdental03.jpeg")}" alt="Southeast Dental office" style="border-radius:25px;box-shadow:0 4px 20px rgba(0,0,0,0.1);margin-bottom:15px;">
@@ -366,7 +369,7 @@ function generateHomepage() {
             <li>Academy of General Dentistry</li>
             <li>American Academy of Cosmetic Dentistry</li>
           </ul>
-          <a href="/about/" class="btn btn-md btn-white-outline">Learn More</a>
+          <a href="/about/" class="btn btn-md btn-white-outline" aria-label="Learn more about Dr. Roth Lewis">Learn More</a>
         </div>
       </div>
     </div>
@@ -379,7 +382,7 @@ function generateHomepage() {
         <div class="service-card">
           <img src="${img(s.img)}" alt="${s.name}" loading="lazy">
           <h3>${s.name}</h3>
-          <a href="/services/${s.slug}/" class="btn btn-sm btn-navy-outline">Learn More</a>
+          <a href="/services/${s.slug}/" class="btn btn-sm btn-navy-outline" aria-label="Learn more about ${s.name}">Learn More</a>
         </div>`).join("")}
       </div>
     </div>
@@ -398,8 +401,8 @@ function generateHomepage() {
           <blockquote>"Dr. Lewis and his dental assistant came in on their day off to see my emergency. I am so appreciative of their dedication to their patients."</blockquote>
           <cite>Mandi K.</cite>
         </div>
-        <button class="carousel-arrow prev" onclick="testSlide(-1)">${svgIcon("arrowLeft")}</button>
-        <button class="carousel-arrow next" onclick="testSlide(1)">${svgIcon("arrowRight")}</button>
+        <button class="carousel-arrow prev" onclick="testSlide(-1)" aria-label="Previous testimonial">${svgIcon("arrowLeft")}</button>
+        <button class="carousel-arrow next" onclick="testSlide(1)" aria-label="Next testimonial">${svgIcon("arrowRight")}</button>
       </div>
     </div>
   </section>`;
@@ -437,7 +440,7 @@ function generateAboutPage() {
           <h2>Why Choose Us?</h2>
           <p>While a large part of what we do at Southeast Dental is aesthetic and very complex treatment driven, the core of what we do is general family care.</p>
           <p>We encourage you to involve yourself in your own treatment and ask questions throughout our relationship. We offer comprehensive services from routine checkups and emergency care to cosmetic makeovers. Call <a href="tel:${phoneTel}"><strong>${phone}</strong></a> for a free consultation.</p>
-          <p style="font-size:14px;color:var(--text-gray);">Serving: Abbeville, Ashford, Dothan, Enterprise, Headland, Ozark, Panama City, Marianna, and more across AL, GA, and FL.</p>
+          <p style="font-size:14px;color:var(--text-muted);">Serving: Abbeville, Ashford, Dothan, Enterprise, Headland, Ozark, Panama City, Marianna, and more across AL, GA, and FL.</p>
         </div>
       </div>
     </div>
@@ -487,8 +490,8 @@ function generateAboutPage() {
           <blockquote>"Dr. Lewis and his dental assistant came in on their day off to see my emergency. I am so appreciative of their dedication to their patients."</blockquote>
           <cite>Mandi K.</cite>
         </div>
-        <button class="carousel-arrow prev" onclick="testSlide(-1)">${svgIcon("arrowLeft")}</button>
-        <button class="carousel-arrow next" onclick="testSlide(1)">${svgIcon("arrowRight")}</button>
+        <button class="carousel-arrow prev" onclick="testSlide(-1)" aria-label="Previous testimonial">${svgIcon("arrowLeft")}</button>
+        <button class="carousel-arrow next" onclick="testSlide(1)" aria-label="Next testimonial">${svgIcon("arrowRight")}</button>
       </div>
     </div>
   </section>`;
@@ -502,7 +505,7 @@ function generateServicesPage() {
       <p>We encourage you to involve yourself in your own treatment and ask questions throughout our relationship.</p>
       <div class="services-hero-buttons">
         <a href="${scheduleUrl}" class="btn btn-lg btn-navy">Schedule Online</a>
-        <a href="/about/" class="btn btn-lg btn-navy-outline" style="background:#fff;">Learn More</a>
+        <a href="/about/" class="btn btn-lg btn-navy-outline" style="background:#fff;" aria-label="Learn more about Southeast Dental">Learn More</a>
       </div>
     </div>
   </section>
@@ -514,7 +517,7 @@ function generateServicesPage() {
         <div class="col-text" style="${i % 2 !== 0 ? 'order:2;' : ''}">
           <h2>${s.name}</h2>
           <p>Professional ${s.name.toLowerCase()} services at Southeast Dental. Our experienced team provides personalized care using the latest techniques and technology.</p>
-          <a href="/services/${s.slug}/" class="btn btn-md btn-navy-outline">Learn More</a>
+          <a href="/services/${s.slug}/" class="btn btn-md btn-navy-outline" aria-label="Learn more about ${s.name}">Learn More</a>
         </div>
         <div class="col-img" style="${i % 2 !== 0 ? 'order:1;' : ''}">
           <img src="${img(s.img)}" alt="${s.name}" style="border-radius:25px;box-shadow:0 4px 20px rgba(0,0,0,0.1);" loading="lazy">
@@ -1016,6 +1019,7 @@ function generatePage(route) {
   <link rel="canonical" href="${siteUrl}${route.path}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap">
   <link href="/src/index.css" rel="stylesheet">
   ${schemaScripts}
 </head>
@@ -1063,18 +1067,36 @@ function copyAssets() {
   console.log("Copied _headers and _redirects");
 }
 
-// Build a set of webp basenames (without extension) so we only wrap <img> tags
-// whose webp sibling actually exists on disk. Computed once at startup.
-const webpAvailable = (() => {
-  const set = new Set();
-  try {
-    for (const f of readdirSync(join(rootDir, "assets", "images"))) {
-      if (f.toLowerCase().endsWith(".webp")) {
-        set.add(f.slice(0, -5).toLowerCase()); // strip ".webp"
-      }
+// Build:
+//   1. Set of webp basenames (without extension) so we only wrap <img> tags
+//      whose webp sibling actually exists on disk.
+//   2. Map of "/assets/images/<filename>" -> { width, height } so the post-
+//      processor can inject explicit width/height on every <img>, eliminating
+//      layout reflow and helping LCP. Sharp metadata reads are async; we run
+//      them in parallel once at startup.
+const webpAvailable = new Set();
+const imgDimensions = new Map();
+
+await (async () => {
+  const imgDir = join(rootDir, "assets", "images");
+  let files;
+  try { files = readdirSync(imgDir); } catch { return; }
+
+  for (const f of files) {
+    if (f.toLowerCase().endsWith(".webp")) {
+      webpAvailable.add(f.slice(0, -5).toLowerCase());
     }
-  } catch { /* dir may not exist on first build */ }
-  return set;
+  }
+
+  const candidates = files.filter(f => /\.(jpe?g|png|webp)$/i.test(f));
+  await Promise.all(candidates.map(async (f) => {
+    try {
+      const meta = await sharp(join(imgDir, f)).metadata();
+      if (meta.width && meta.height) {
+        imgDimensions.set(`/assets/images/${f}`, { width: meta.width, height: meta.height });
+      }
+    } catch { /* skip unreadable files */ }
+  }));
 })();
 
 // Post-process generated HTML:
@@ -1093,12 +1115,25 @@ function optimizeImagesInHtml(html) {
       return `<picture><source srcset="${webpSrc}" type="image/webp"><img${pre} src="${src}"${post}></picture>`;
     }
   );
-  // Add loading="lazy" + decoding="async" where missing (skip LCP-hint imgs)
+  // Add loading="lazy" + decoding="async" + explicit width/height where missing
+  // (skip width/height on LCP-hint imgs only if they already have them).
   html = html.replace(/<img\b([^>]*)>/gi, (full, attrs) => {
-    if (/fetchpriority\s*=\s*"high"/i.test(attrs)) return full;
     let updated = attrs;
-    if (!/\bloading\s*=/i.test(updated)) updated += ' loading="lazy"';
-    if (!/\bdecoding\s*=/i.test(updated)) updated += ' decoding="async"';
+    const srcMatch = updated.match(/\bsrc="(\/assets\/images\/[^"]+)"/i);
+    const isLCP = /fetchpriority\s*=\s*"high"/i.test(updated);
+
+    // width/height — inject only if BOTH missing and we have dimensions
+    if (srcMatch &&
+        !/\bwidth\s*=/i.test(updated) &&
+        !/\bheight\s*=/i.test(updated)) {
+      const dims = imgDimensions.get(srcMatch[1]);
+      if (dims) updated = ` width="${dims.width}" height="${dims.height}"` + updated;
+    }
+
+    if (!isLCP) {
+      if (!/\bloading\s*=/i.test(updated)) updated += ' loading="lazy"';
+      if (!/\bdecoding\s*=/i.test(updated)) updated += ' decoding="async"';
+    }
     return `<img${updated}>`;
   });
   return html;
