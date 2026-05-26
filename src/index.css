@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+/* Google Fonts loaded via <link> in HTML head (parallelizes the request,
+   removes ~700ms of render-blocking that the @import caused). */
 
 /* ========================================================================
    SEDENTIST 2026 BEAUTIFICATION LAYER (v2 — brand-preserving)
@@ -803,14 +804,15 @@ button {
 
 .btn-gray-outline {
   background-color: transparent;
-  color: #BEBEBE;
-  border-color: #BEBEBE;
+  color: var(--navy);
+  border-color: #6B7280;
   border-width: 1px;
 }
 
 .btn-gray-outline:hover {
-  background-color: #BEBEBE;
+  background-color: var(--navy);
   color: var(--white);
+  border-color: var(--navy);
 }
 
 /* ==================== HEADER ==================== */
